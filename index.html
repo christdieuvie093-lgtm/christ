@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Développeur Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="CSS/style.css" />
+</head>
+<body>
+
+  <!-- ====== NAVIGATION ====== -->
+  <header class="navbar">
+    <a href="index.html" class="logo">dev<span>.</span></a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="pages/projets.html">Projets</a></li>
+        <li><a href="#experience">Expériences</a></li>
+        <li><a href="pages/contact.html" class="btn-nav">Me contacter</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="Ouvrir le menu">&#9776;</button>
+    </nav>
+  </header>
+
+  <!-- ====== HERO ====== -->
+  <section class="hero" id="home">
+<img src="image/photo.jpeg" alt="ma photo">
+    <div class="hero-tag">Disponible pour des projets freelance</div>
+    <h1 class="hero-title">
+      Je construis des<br />
+      <span class="accent">expériences web</span><br />
+      qui marquent.
+    </h1>
+    <p class="hero-sub">
+      Développeur web passionné par le code propre, les interfaces soignées
+      et les projets qui ont du sens.
+    </p>
+    <div class="hero-cta">
+      <a href="pages/projets.html" class="btn-primary">Voir mes projets</a>
+      <a href="pages/contact.html" class="btn-secondary">Me contacter</a>
+    </div>
+    <div class="hero-scroll">↓ Scroll</div>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+  </section>
+
+  <!-- ====== ABOUT ====== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-wrap">
+          <img src="image/photo.jpeg" alt="Photo de Christ Dieuvie Molende">
+        </div>
+        <div class="about-text">
+          <span class="section-label">À propos</span>
+          <h2>Qui suis je :</h2>
+          <p>Je m'appelle <strong>Christ Dieuvie Molende</strong>, étudiant en L2 Genie logiciel et administration reseau ;passionné par la création d'interfaces modernes, performantes et accessibles.</p>
+          <p>Ce qui me motive dans le développement, c'est la satisfaction de transformer une idée en quelque chose de concret, fonctionnel, et beau.</p>
+          <div class="stats-row">
+            <div class="stat">
+              <span class="stat-num">3+</span>
+              <span class="stat-label">Projets réalisés</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">5</span>
+              <span class="stat-label">Technologies</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">1</span>
+              <span class="stat-label">An d'apprentissage</span>
+            </div>
+          </div>
+          <a href="#" class="btn-primary" download>Télécharger mon CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SKILLS ====== -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <span class="section-label">Compétences</span>
+      <h2>Ce que je maîtrise</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">🌐</div>
+          <h3>HTML</h3>
+          <p>Structure sémantique, accessibilité, formulaires avancés.</p>
+          <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🎨</div>
+          <h3>CSS</h3>
+          <p>Flexbox, Grid, animations, responsive design.</p>
+          <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">⚡</div>
+          <h3>JavaScript</h3>
+          <p>Manipulation du DOM, événements, ES6+.</p>
+          <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🐘</div>
+          <h3>PHP</h3>
+          <p>Traitement de formulaires, logique serveur.</p>
+          <div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🗄️</div>
+          <h3>MySQL</h3>
+          <p>Requêtes SQL, modélisation de bases de données.</p>
+          <div class="skill-bar"><div class="skill-fill" style="width:55%"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🐙</div>
+          <h3>Git & GitHub</h3>
+          <p>Versionnage, branches, GitHub Pages.</p>
+          <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PROJETS ====== -->
+  <section class="projects-preview section" id="projects">
+    <div class="container">
+      <span class="section-label">Projets</span>
+      <h2>Quelques réalisations</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-img-placeholder">Aperçu projet 1</div>
+          <div class="project-info">
+            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            <h3>Nom du projet 1</h3>
+            <p>Description courte du projet, technologies utilisées et ce que tu as appris.</p>
+            <a href="pages/projets.html" class="project-link">Voir le projet →</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-img-placeholder">Aperçu projet 2</div>
+          <div class="project-info">
+            <div class="project-tags"><span>PHP</span><span>MySQL</span></div>
+            <h3>Nom du projet 2</h3>
+            <p>Description courte du projet, technologies utilisées et ce que tu as appris.</p>
+            <a href="pages/projets.html" class="project-link">Voir le projet →</a>
+          </div>
+
+
+
+        </article>
+        <article class="project-card">
+          <div class="project-img-placeholder">Aperçu projet 3</div>
+          <div class="project-info">
+            <div class="project-tags"><span>HTML</span><span>CSS</span><span>PHP</span></div>
+            <h3>Nom du projet 3</h3>
+            <p>Description courte du projet, technologies utilisées et ce que tu as appris.</p>
+            <a href="pages/projets.html" class="project-link">Voir le projet →</a>
+          </div>
+        </article>
+      </div>
+      <div class="center-btn">
+        <a href="pages/projets.html" class="btn-secondary">Tous mes projets</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== EXPÉRIENCES ====== -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <span class="section-label">Parcours</span>
+      <h2>Expériences & Formation</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2024 — aujourd'hui</span>
+            <h3>Formation Développement Web</h3>
+            <p>HTML, CSS, JavaScript, PHP, MySQL. Projets complets réalisés en cours.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2023</span>
+            <h3>[Expérience ou activité]</h3>
+            <p>Décris ici une expérience associative, un stage, ou un projet personnel.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== RECHERCHE ====== -->
+  <section class="search-section section" id="search">
+    <div class="container">
+      <span class="section-label">Recherche</span>
+      <h2>Trouver un projet</h2>
+      <p class="search-desc">Filtre mes projets par technologie ou thème.</p>
+      <form class="search-form" action="pages/projets.html" method="GET">
+        <input
+          type="search"
+          name="q"
+          id="search-input"
+          placeholder="Ex : PHP, formulaire, galerie..."
+          aria-label="Rechercher un projet"
+        />
+        <button type="submit" class="btn-primary">Rechercher</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ====== CONTACT CTA ====== -->
+  <section class="contact-cta section" id="contact-cta">
+    <div class="container">
+      <h2>Tu as un projet en tête ?</h2>
+      <p>Dis-moi ce que tu cherches — je serai ravi d'en discuter.</p>
+      <a href="pages/contact.html" class="btn-primary">Prendre contact</a>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="index.html" class="logo">dev<span>.</span></a>
+      <p class="footer-copy">© 2025 Christ Dieuvie Molende. Fait avec ❤️ et du code propre.</p>
+      <div class="footer-links">
+        <a href="https://github.com/ton-username" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/ton-profil" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#" download>CV</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Menu burger mobile
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.skill-card, .project-card, .timeline-item, .stat').forEach(el => {
+      el.classList.add('fade-in');
+      observer.observe(el);
+    });
+  </script>
+
+</body>
+</html>
