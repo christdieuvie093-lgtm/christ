@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Portfolio Développeur Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../CSS/style.css" />
+</head>
+<body>
+
+  <!-- ====== NAVIGATION ====== -->
+  <header class="navbar">
+    <a href="../index.html" class="logo">dev<span>.</span></a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="../index.html#about">À propos</a></li>
+        <li><a href="../index.html#skills">Compétences</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="../index.html#experience">Expériences</a></li>
+        <li><a href="contact.html" class="btn-nav">Me contacter</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="Ouvrir le menu">&#9776;</button>
+    </nav>
+  </header>
+
+  <!-- ====== CONTACT ====== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <span class="section-label">Contact</span>
+      <h2>Discutons de votre projet</h2>
+      <div class="contact-grid">
+        <div class="contact-form">
+          <form action="#" method="POST">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit" class="btn-primary">Envoyer</button>
+          </form>
+        </div>
+        <div class="contact-info">
+          <h3>Informations</h3>
+          <p>Vous pouvez aussi me contacter via :</p>
+          <div class="reseaux">
+            <a href="https://linkedin.com/in/votreprofil" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/votreprofil" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="../index.html" class="logo">dev<span>.</span></a>
+      <p class="footer-copy">© 2025 Christ Dieuvie Molende. Fait avec ❤️ et du code propre.</p>
+      <div class="footer-links">
+        <a href="https://github.com/ton-username" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/ton-profil" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#" download>CV</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Menu burger mobile
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.skill-card, .project-card, .timeline-item, .stat').forEach(el => {
+      el.classList.add('fade-in');
+      observer.observe(el);
+    });
+  </script>
+
+</body>
+</html>
